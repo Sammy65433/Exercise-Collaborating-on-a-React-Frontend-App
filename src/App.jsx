@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import { getItems } from "../api";
+import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { getItems } from '../api';
+import Nav from '../components/Nav/Nav';
 
-getItems()
+getItems();
 // import Nav from "../components/Nav"
 // import Home from "../pages/Home"
 // import ItemDetails from "../pages/ItemDetails"
@@ -10,11 +11,12 @@ getItems()
 
 // import NotFound from "../pages/NotFound"
 
-
-
 export default function App() {
+	const [items, setItems] = useState([]);
 
-    const [ items, setItems] = useState([]);
-
-
+	return (
+		<>
+			<Nav />
+		</>
+	);
 }
