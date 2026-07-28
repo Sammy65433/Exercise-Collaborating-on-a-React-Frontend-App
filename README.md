@@ -113,3 +113,12 @@ Stuck in the Terminal? If it’s asking for a commit/merge message, you’re lik
 3. press "esc" (escape)
 4. write ":wq" (write & quit) (can also press capital Z twice after ESC)
 5. press enter
+
+
+person1 app.jsx + api.js
+per2 nav + context / css 
+per3 home + search / css 
+per4 itemlist + item  /css
+per5 itemDetails  /css 
+per6 fav + notfound  / css 
+
