@@ -95,7 +95,7 @@ Follow this exact routine when completing feature assignments:
 Commit and Push:
 git add .
 git commit -m "Added ItemDetails page"
-git push origin bob
+git push origin Sam
 Open a Pull Request (PR):
 Go to GitHub -> Pull requests -> New pull request.
 Set base branch to main and compare branch to bob. (Video Resource: Pull Requests)
@@ -104,9 +104,11 @@ The Driver reviews the code for breaking changes or syntax errors.
 If clean, they click “Merge pull request”.
 Syncing the Team:
 After any PR is merged, every member must update their local main and merge into their personal branch:
+
+
 git checkout main
 git pull origin main
-git checkout bob
+git checkout Sam
 git merge main
 Encounter a Merge Conflict? Don’t panic. Open VS Code, accept current/incoming changes in the split editor, save the file, commit, and push again. (Video Resource: Merge Conflict)
 
@@ -135,3 +137,22 @@ OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=d4129e1b
 
 Click the following URL to activate your key: http://www.omdbapi.com/apikey.aspx?VERIFYKEY=abb21c7d-7576-4cb6-adac-d258524d4414
 If you did not make this request, please disregard this email.
+
+
+-App.jsx 
+-stores 
+-items 
+favitems 
+theme 
+
+fetch movies on load 
+define routes 
+passes prop on pages 
+theme context
+
+
+-api.js
+holds http://www.omdbapi.com n fetch func
+getItems for movie search default 
+getitems Details(id)
+
