@@ -66,13 +66,10 @@ return (
     <div key={movie.imdbID}>
         <h3>{movie.Title}</h3>
         <p>{movie.Year}</p>
-        <button onClick={() => addToFavorites(movie)}>Add to Favorites</button>
-
-
-
+        <button onClick={() => addToFavorites(movie)}>Add to Favorites
+        </button>
 </div>
 ))}
-
 
 </div>
 </>
@@ -82,6 +79,7 @@ return (
 
 // useEffect
 
-
+)
 }
+
 
