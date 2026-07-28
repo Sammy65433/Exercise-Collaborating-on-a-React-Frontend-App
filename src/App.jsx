@@ -1,18 +1,12 @@
-<<<<<<< HEAD
+
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getItemDetails, getItems } from "../api";
 import "../styles/App.css";
-
-
-=======
-import { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { getItems } from '../api';
 import Nav from '../components/Nav/Nav';
 
-getItems();
->>>>>>> main
+// getItems();
+
 // import Nav from "../components/Nav"
 // import Home from "../pages/Home"
 // import ItemDetails from "../pages/ItemDetails"
@@ -21,10 +15,7 @@ getItems();
 // import NotFound from "../pages/NotFound"
 
 export default function App() {
-	const [items, setItems] = useState([]);
-
-<<<<<<< HEAD
-    const [items, setItems] = useState([]); // stores the list of movies fetched from the API
+ const [items, setItems] = useState([]); // stores the list of movies fetched from the API
 const [favoriteItems, setFavoriteItems] = useState([]); // stores the movies the user adds to favorites
 const [theme, setTheme] = useState("light"); // stores the current theme, starting with light mode
 
@@ -64,32 +55,33 @@ function removefromFav() {
 
 
 // light / dark - lightmode 
-function toggleTheme() {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-
 
 return (
 
 <>
-<ThemeContext.Provider value={theme}>
+<div>
+<h1> Movie App</h1>
+<h2>Movies</h2>
+{items.map((movie) => (
+    <div key={movie.imdbID}>
+        <h3>{movie.Title}</h3>
+        <p>{movie.Year}</p>
+        <button onClick={() => addToFavorites(movie)}>Add to Favorites</button>
 
 
 
+</div>
+))}
 
 
-
-
-</ThemeContext.Provider>
-
-
-
+</div>
 </>
-)
 
 
 
 
 // useEffect
 
+
 }
-}
+

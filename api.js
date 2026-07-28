@@ -24,15 +24,18 @@ export async function getItemDetails(id) {
     console.log("ID:", id);
     try {
         const resp = await fetch(`${BASE_URL}?apikey=${API_KEY}&i=${id}`);
-        const text = await resp.text();
+        console.log(resp)
+        const text = await resp.json();
         console.log("RAW:", text);
-        const data = JSON.parse(text);
+        // const data = JSON.parse(text);
+        
 
-        if (data.Response === "False") { //check if OMDb says the movie was not found 
+        if (text.Response === "False") { //check if OMDb says the movie was not found 
             return null;
         }
 
-        return data;
+        return text;
+
     } catch (error) {
         console.error("Error fetching MovieDetails:", error);
         return null;

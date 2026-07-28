@@ -95,7 +95,7 @@ Follow this exact routine when completing feature assignments:
 Commit and Push:
 git add .
 git commit -m "Added ItemDetails page"
-git push origin bob
+git push origin Sam
 Open a Pull Request (PR):
 Go to GitHub -> Pull requests -> New pull request.
 Set base branch to main and compare branch to bob. (Video Resource: Pull Requests)
