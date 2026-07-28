@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getItemDetails, getItems } from "../api";
 import "../styles/App.css";
 
 
+=======
+import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { getItems } from '../api';
+import Nav from '../components/Nav/Nav';
+
+getItems();
+>>>>>>> main
 // import Nav from "../components/Nav"
 // import Home from "../pages/Home"
 // import ItemDetails from "../pages/ItemDetails"
@@ -11,10 +20,10 @@ import "../styles/App.css";
 
 // import NotFound from "../pages/NotFound"
 
-
-
 export default function App() {
+	const [items, setItems] = useState([]);
 
+<<<<<<< HEAD
     const [items, setItems] = useState([]); // stores the list of movies fetched from the API
 const [favoriteItems, setFavoriteItems] = useState([]); // stores the movies the user adds to favorites
 const [theme, setTheme] = useState("light"); // stores the current theme, starting with light mode

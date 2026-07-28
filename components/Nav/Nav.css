@@ -1,0 +1,15 @@
+nav {
+	background-color: var(--nav-bg);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.nav-btn {
+	background-color: var(--nav-bg);
+	color: var(--text-color);
+	cursor: pointer;
+	padding: 5px 20px;
+	border-radius: 15px;
+}
