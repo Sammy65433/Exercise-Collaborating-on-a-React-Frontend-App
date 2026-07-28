@@ -3,16 +3,16 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getItemDetails, getItems } from "../api";
 import "../styles/App.css";
-import Nav from '../components/Nav/Nav';
+// import Nav from '../components/Nav';
 
 // getItems();
 
-// import Nav from "../components/Nav"
-// import Home from "../pages/Home"
+import Nav from "../components/Nav/Nav"
+import Home from "../pages/Home"
 // import ItemDetails from "../pages/ItemDetails"
-// import Favorites from "../pages/Favorites"
+import Favorites from "../pages/Favorites"
 
-// import NotFound from "../pages/NotFound"
+import NotFound from "../pages/NotFound"
 
 export default function App() {
  const [items, setItems] = useState([]); // stores the list of movies fetched from the API
