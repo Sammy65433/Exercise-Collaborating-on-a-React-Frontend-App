@@ -47,6 +47,8 @@ cd react-team-project
 Open the folder in VS Code.
 Run npm install to install all dependencies locally.
 Create a local .env file if an API key is required (e.g., VITE_API_KEY=your_key_here).
+
+
 Step 4: Create Individual Member Branches
 Who does this: Everyone (including the Driver).
 Goal: Create a personal feature branch so you can build without breaking main.
@@ -56,6 +58,8 @@ Create and switch to your personal branch:
 git checkout -b bob
 Push your branch to GitHub so it’s available remotely:
 git push -u origin bob
+
+
 Step 5: File-Based Assignment & Component Collaboration
 To prevent merge conflicts, team members will choose files to work on and exclusively work in those files. Decide as a group who will work on what file, but make sure the work is evenly distributed amongst team members.
 
@@ -115,10 +119,19 @@ Stuck in the Terminal? If it’s asking for a commit/merge message, you’re lik
 5. press enter
 
 
-person1 app.jsx + api.js
-per2 nav + context / css 
-per3 home + search / css 
-per4 itemlist + item  /css
-per5 itemDetails  /css 
-per6 fav + notfound  / css 
+person1 app.jsx + api.js - Sam 
+per2 nav + context / css - Richard
+per3 home + search / css - Monawdev
+per4 itemlist + item  /css - Jinling
+per5 itemDetails  /css  - quincy b 
+per6 fav + notfound  / css - Abena
 
+
+Here is your key: d4129e1b
+
+Please append it to all of your API requests,
+
+OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=d4129e1b
+
+Click the following URL to activate your key: http://www.omdbapi.com/apikey.aspx?VERIFYKEY=abb21c7d-7576-4cb6-adac-d258524d4414
+If you did not make this request, please disregard this email.
