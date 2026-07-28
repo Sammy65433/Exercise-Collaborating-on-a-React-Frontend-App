@@ -1,0 +1,21 @@
+.savedMoviesContainer {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 2rem; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.title {
+    text-align: center; 
+    color: orangered; 
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+}
+
+.noMoviesMessage { 
+    text-align: center; 
+    font-size: 1.2rem; 
+    color: black; 
+    margin-top: 2rem;
+    
+}
